@@ -150,7 +150,7 @@ h3 {
 }
 
 section {
-    padding: 3% 2%;
+    padding: 5% 2%;
     background-color: #8195ce;
     border-radius: 10px;
     box-shadow: 2px 2px 7px;
@@ -223,8 +223,10 @@ ul {
 }
 
 #Proyectos article {
-    border-style: ridge;
     padding: 1%;
+}
+.ul-proyectos li {
+    text-align: left;
 }
 
 #Skills {
@@ -281,6 +283,10 @@ article {
 article:hover {
     transform: scale(1.05);
     transition: 0.3s;
-    cursor: pointer;
+    box-shadow: 2px 2px 7px;
+}
+#grafica img:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
     box-shadow: 2px 2px 7px;
 }
