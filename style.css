@@ -1,8 +1,7 @@
 html {
     scroll-behavior: smooth;
-    background-color: #142481;
+    background-color: #3e9fee;
     font-family: sans-serif;
-    font-size: 16px;
   }
 
 body {
@@ -29,7 +28,7 @@ a {
     font-weight: bold;
 }
 header {
-    background-color: rgb(38, 63, 173);
+    background-color: rgb(38, 112, 173);
     display: flex;
     padding: 0 1%;
     align-items: center;
@@ -151,14 +150,14 @@ h3 {
 
 section {
     padding: 5% 2%;
-    background-color: #8195ce;
+    background-color: #e5ebf0;
     border-radius: 10px;
     box-shadow: 2px 2px 7px;
     margin: 20px auto;
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
-    border-left: 7px solid rgb(90, 86, 86);
+    border-left: 7px solid rgb(27, 41, 163);
     
 }
 
@@ -224,6 +223,115 @@ ul {
 
 #Proyectos article {
     padding: 1%;
+    
+}
+#article-1{
+    animation: article-1 15s infinite ;
+    position: relative;
+
+}
+@keyframes article-1{
+    0%{
+        left: 0PX;
+        top: 0PX;
+        opacity: 100;
+    }
+   
+    10% {
+        left: -60px;
+        top: 0px;
+        opacity: 0;
+        
+    }
+    15% {
+        left: 250%;
+        top: 0PX;
+        
+
+    }
+    30% { 
+        left: 206%;
+        top: 0PX; 
+
+    }
+    70% {
+        left: 104%;
+        top: 0PX;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+#article-2{
+    animation: article-2 15s infinite;
+    position: relative;
+}
+
+@keyframes article-2 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    30% {
+        left: -104%; 
+        top: 0px;
+        opacity: 100;
+    }
+    40% {
+        left: -120%;
+        top: 0px;
+        opacity: 0;
+        
+    }
+    50% {
+        left: 200%;
+        top: 0px;
+        
+    }
+    70% {
+        left: 106%;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+#article-3{
+    animation: article-3 15s infinite;
+    position: relative;
+}
+@keyframes article-3{
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    30% {
+        left: -103%;
+    }
+    60% {
+        left: -206%;
+        opacity: 100;
+    }
+    70% {
+        left: -220%;
+        opacity: 0;
+    }
+    
+    80% {
+        left: 100%;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+    
 }
 .ul-proyectos li {
     text-align: left;
