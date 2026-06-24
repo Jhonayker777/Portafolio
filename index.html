@@ -2,147 +2,658 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Jhonayker Quintero - Desarrollador Java en formación" />
+    <title>Jhonayker Quintero | Portafolio</title>
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- ==================== HEADER / NAVEGACIÓN ==================== -->
     <header>
-        <H1>Portafolio</H1>
+        <div class="logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span class="logo-text">JQ</span>
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Skills">Skills</a></li>
-
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-
         </nav>
+
+        <!-- Menú hamburguesa para móvil -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
+
+    <!-- ==================== MAIN ==================== -->
     <main>
-        <section id="Inicio">
-            <h2>Inicio</h2>
-            <div>
-                <img src="fotos/WhatsApp Image 2026-04-08 at 9.02.00 PM.jpe" alt="Foto de perfil" width="400">
+        <!-- ===== SECCIÓN INICIO / HERO ===== -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">👋 Disponible para oportunidades</span>
+                    <h1>Hola, soy <span class="highlight">Jhonayker Quintero</span></h1>
+                    <p class="hero-subtitle">
+                        Desarrollador Java en formación | Apasionado por crear soluciones funcionales
+                    </p>
+                    <p class="hero-description">
+                        De la lógica de <strong>Spring Boot</strong> a la creatividad del frontend.
+                        Construyo software que resuelve problemas reales, aprendiendo cada día para
+                        mejorar mis habilidades.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <i class="fas fa-code"></i> Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contactar
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Jhonayker777" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jhonayker-quintero" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-image-wrapper">
+                        <!-- ✅ CORREGIDO: Usar avatar de GitHub o corregir ruta -->
+                        <img src="https://github.com/Jhonayker777.png" 
+                             alt="Jhonayker Quintero - Foto de perfil" 
+                             class="profile-image" />
+                        <!-- Si quieres usar tu foto local, usa: -->
+                        <!-- <img src="fotos/perfil.jpg" alt="Jhonayker Quintero" class="profile-image" /> -->
+                        <div class="profile-ring"></div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-code"></i> Java
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-database"></i> SQL
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                </div>
             </div>
-            <div id="descripcion-inicio">
-                <h3> Nombre</h3>
-                <p>Jhonayker Alexander Quintero Olarte</p>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <span>Desliza</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
-            <h3>Descripcion general</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dignissimos expedita reiciendis
-                quia
-                incidunt error suscipit doloribus aliquid molestiae quam, temporibus ducimus inventore
-                voluptatem
-                neque commodi magni fugiat tempore dolor.</p>
         </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre mi</h2>
-            <article >
-                <h3 class="h3-sobre-mi">Personal</h3>
-                <p class="p-sobre-mi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laborum ullam
-                    officia, enim deleniti
-                    inventore nemo, accusantium ipsam aliquid autem saepe consequatur quam praesentium? Ipsum
-                    facilis ullam quia porro dolor.</p>
-            </article>
-            <article>
-                <h3 class="h3-sobre-mi">Academico</h3>
-                <p class="p-sobre-mi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus natus quos
-                    architecto placeat
-                    enim
-                    distinctio incidunt dolores! Ullam culpa, dolor, impedit expedita excepturi fugiat totam
-                    asperiores
-                    odit cupiditate, recusandae eaque.</p>
-            </article>
-        </section>
-
-        <section id="Proyectos">
-            <h2>Proyectos</h2>
-            <article id="article-1">
-                <h3>Gestion de herramientas con python</h3>
-                <h4>Descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio adipisci. Ut totam ipsam ea
-                    deserunt iste. Consectetur nulla ullam necessitatibus eaque in vero aperiam ipsam accusantium,
-                    incidunt dolorum excepturi.</p>
-                <h4>Tecnologias</h4>
-                <ul class="ul-proyectos">
-                    <li>python</li>
-                    <li>Archivos JSON</li>
-                    <li>Gith& Github</li>
-                </ul>
-                <h4>Rerpositorio: <button><a
-                            href="https://github.com/Jhonayker777/GestionHerramientasCampus.git">Ver</a></button> </h4>
-            </article>
-            <article id="article-2">
-                <h3>Gestion de herramientas con python</h3>
-                <h4>Descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio adipisci. Ut totam ipsam ea
-                    deserunt iste. Consectetur nulla ullam necessitatibus eaque in vero aperiam ipsam accusantium,
-                    incidunt dolorum excepturi.</p>
-                <h4>Tecnologias</h4>
-                <ul class="ul-proyectos">
-                    <li>python</li>
-                    <li>Archivos JSON</li>
-                    <li>Gith& Github</li>
-                </ul>
-                <h4>Rerpositorio: <button><a
-                            href="https://github.com/Jhonayker777/GestionHerramientasCampus.git">Ver</a></button> </h4>
-            </article>
-            <article id="article-3">
-                <h3>Gestion de herramientas con python</h3>
-                <h4>Descripcion</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, optio adipisci. Ut totam ipsam ea
-                    deserunt iste. Consectetur nulla ullam necessitatibus eaque in vero aperiam ipsam accusantium,
-                    incidunt dolorum excepturi.</p>
-                <h4>Tecnologias</h4>
-                <ul class="ul-proyectos">
-                    <li>python</li>
-                    <li>Archivos JSON</li>
-                    <li>Gith& Github</li>
-                </ul>
-                <h4>Rerpositorio: <button><a
-                            href="https://github.com/Jhonayker777/GestionHerramientasCampus.git">Ver</a></button> </h4>
-            </article>
-        </section>
-
-        <section id="Skills">
-            <h2>Habilidaes</h2>
-            <div id="imagenes-skills">
-                <!--Imagen de cda skill-->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
-                    alt="python" width="100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png"
-                    alt="Html" width="100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1920px-CSS3_logo_and_wordmark.svg.png"
-                    alt="Css" width="75">
-                <img src="https://images.icon-icons.com/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png"
-                    alt="MySql" width="105|">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
-                    alt="Java" width="100">
-                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
-                    alt="JavaScript" width="100">
-                <img src="https://clustertucuman.org.ar/wp-content/uploads/git-github.svg" alt="Git & Github"
-                    width="100">
+        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+        <section id="sobre-mi" class="about">
+            <div class="section-header">
+                <span class="section-tag">Conóceme</span>
+                <h2>Sobre Mí</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <div id="grafica">
-                <h3>Grafica nivel de deminio</h3>
-                <img src="fotos/grafica.png" alt="" width="700">
-            </div>
+            <div class="about-grid">
+                <article class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personal</h3>
+                    <p>
+                        Soy un desarrollador en formación con una fuerte pasión por la programación y
+                        la resolución de problemas. Me caracterizo por mi capacidad de aprendizaje
+                        autodidacta, trabajo en equipo y adaptabilidad a nuevas tecnologías.
+                    </p>
+                    <div class="about-tags">
+                        <span>🧠 Aprendizaje continuo</span>
+                        <span>🤝 Trabajo en equipo</span>
+                        <span>💡 Resolución de problemas</span>
+                    </div>
+                </article>
 
-            <div>
-                <h3>Breve descripcion por skill</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quaerat consequuntur nostrum
-                    asperiores architecto repudiandae odio, incidunt sit ratione unde eaque quae harum cumque minima
-                    inventore nulla autem voluptatum delectus?
+                <article class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Académico</h3>
+                    <p>
+                        Actualmente me encuentro en formación intensiva como desarrollador de software,
+                        con enfoque principal en el ecosistema <strong>Java y Spring Boot</strong>.
+                        Complemento mi aprendizaje con cursos en Python, JavaScript y metodologías ágiles como SCRUM.
+                    </p>
+                    <div class="about-tags">
+                        <span>📚 Java + Spring Boot</span>
+                        <span>🐍 Python</span>
+                        <span>📊 SCRUM</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN PROYECTOS ===== -->
+        <section id="proyectos" class="projects">
+            <div class="section-header">
+                <span class="section-tag">Mi Trabajo</span>
+                <h2>Proyectos Destacados</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Proyectos que he desarrollado durante mi formación como desarrollador
                 </p>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">📋 Todos</button>
+                <button class="filter-btn" data-filter="java">☕ Java</button>
+                <button class="filter-btn" data-filter="python">🐍 Python</button>
+                <button class="filter-btn" data-filter="frontend">🎨 Frontend</button>
+                <button class="filter-btn" data-filter="database">🗄️ Bases de Datos</button>
+            </div>
+
+            <!-- CONTENEDOR DE PROYECTOS -->
+            <div class="projects-grid" id="projectsContainer">
+                <!-- ===== PROYECTO 1 - JAVA ===== -->
+                <article class="project-card" data-category="java">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-coffee"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>API REST - Gestión de Tareas</h3>
+                    <p class="project-description">
+                        API REST completa con Spring Boot, Spring Data JPA y MySQL para gestionar tareas.
+                        Incluye autenticación con JWT, validaciones y manejo de errores personalizado.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java 17</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">JPA</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Jhonayker777" target="_blank" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 2 - PYTHON ===== -->
+                <article class="project-card" data-category="python">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fab fa-python"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>Sistema de Gestión de Herramientas</h3>
+                    <p class="project-description">
+                        Script en Python para gestionar inventario de herramientas. Permite agregar, eliminar,
+                        buscar y generar reportes en CSV. Manejo de archivos JSON para persistencia.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">JSON</span>
+                        <span class="tech-badge">CSV</span>
+                        <span class="tech-badge">POO</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Jhonayker777/GestionHerramientasCampus.git" target="_blank"
+                            class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 3 - FRONTEND ===== -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>Landing Page - Portafolio Personal</h3>
+                    <p class="project-description">
+                        Desarrollo completo de una landing page responsive desde cero. Incluye modo oscuro,
+                        animaciones CSS, menú hamburguesa y diseño moderno con enfoque en UX.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Responsive</span>
+                        <span class="tech-badge">Flexbox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 4 - JAVA ===== -->
+                <article class="project-card" data-category="java">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-users"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>Sistema de Gestión de Empleados</h3>
+                    <p class="project-description">
+                        CRUD completo con Spring Boot, Thymeleaf y Bootstrap. Administración de empleados
+                        y departamentos con validaciones y búsqueda avanzada.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">Thymeleaf</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">H2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 5 - PYTHON ===== -->
+                <article class="project-card" data-category="python">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <span class="project-status">🚧 En desarrollo</span>
+                    </div>
+                    <h3>Dashboard de Análisis de Ventas</h3>
+                    <p class="project-description">
+                        Dashboard interactivo con Python, Pandas y Plotly para visualizar tendencias de ventas,
+                        KPIs y generar reportes automatizados.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">Plotly</span>
+                        <span class="tech-badge">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 6 - FRONTEND ===== -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>Calculadora Interactiva</h3>
+                    <p class="project-description">
+                        Calculadora web con interfaz moderna, historial de operaciones, teclado soportado
+                        y modo oscuro. Desarrollada con HTML, CSS y JavaScript puro.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">DOM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 7 - DATABASE ===== -->
+                <article class="project-card" data-category="database">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-database"></i></div>
+                        <span class="project-status">✅ Finalizado</span>
+                    </div>
+                    <h3>Optimización de Consultas SQL</h3>
+                    <p class="project-description">
+                        Análisis y optimización de consultas SQL para mejorar rendimiento en bases de datos
+                        con más de 1M de registros. Implementación de índices y procedures.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Índices</span>
+                        <span class="tech-badge">Procedures</span>
+                        <span class="tech-badge">Triggers</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 8 - JAVA ===== -->
+                <article class="project-card" data-category="java">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <span class="project-status">🚧 En desarrollo</span>
+                    </div>
+                    <h3>E-Commerce API - Microservicios</h3>
+                    <p class="project-description">
+                        API de comercio electrónico con arquitectura de microservicios usando Spring Cloud,
+                        Eureka, Gateway y comunicación entre servicios.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Cloud</span>
+                        <span class="tech-badge">Eureka</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kafka</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ===== PROYECTO 9 - PYTHON ===== -->
+                <article class="project-card" data-category="python">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <span class="project-status">🚧 En desarrollo</span>
+                    </div>
+                    <h3>Bot de Automatización de Correos</h3>
+                    <p class="project-description">
+                        Bot en Python que automatiza el envío de correos electrónicos personalizados usando
+                        SMTP, plantillas HTML y programación de tareas.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">SMTP</span>
+                        <span class="tech-badge">Schedule</span>
+                        <span class="tech-badge">CSV</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- BOTÓN CARGAR MÁS -->
+            <div class="load-more-container">
+                <button class="btn btn-secondary btn-load-more" id="loadMoreBtn">
+                    <i class="fas fa-plus-circle"></i> Cargar más proyectos
+                </button>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN HABILIDADES ===== -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <span class="section-tag">Tecnologías</span>
+                <h2>Habilidades Técnicas</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Tecnologías y herramientas que manejo en mi día a día como desarrollador
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Java - Intermedio-Avanzado → 75% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            alt="Java" />
+                    </div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio-Avanzado</span>
+                </div>
+
+                <!-- Spring Boot - Intermedio → 60% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                            alt="Spring Boot" />
+                    </div>
+                    <span class="skill-name">Spring Boot</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio</span>
+                </div>
+
+                <!-- Python - Intermedio → 55% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python" />
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio</span>
+                </div>
+
+                <!-- JavaScript - Intermedio-Básico → 45% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio-Básico</span>
+                </div>
+
+                <!-- HTML5 - Avanzado → 85% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" />
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-level">Avanzado</span>
+                </div>
+
+                <!-- CSS3 - Intermedio-Avanzado → 70% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS3" />
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio-Avanzado</span>
+                </div>
+
+                <!-- MySQL - Básico-Intermedio → 35% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL" />
+                    </div>
+                    <span class="skill-name">MySQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 35%"></div>
+                    </div>
+                    <span class="skill-level">Básico-Intermedio</span>
+                </div>
+
+                <!-- Git - Intermedio → 60% -->
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                    </div>
+                    <span class="skill-name">Git & GitHub</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <span class="skill-level">Intermedio</span>
+                </div>
+            </div>
+
+            <!-- Metodologías -->
+            <div class="methodologies">
+                <h3><i class="fas fa-users"></i> Metodologías y Herramientas</h3>
+                <div class="methodology-tags">
+                    <span class="method-tag">🔄 SCRUM</span>
+                    <span class="method-tag">📋 Jira</span>
+                    <span class="method-tag">📝 Postman</span>
+                    <span class="method-tag">📦 Maven</span>
+                    <span class="method-tag">🐳 Docker (Básico)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN CONTACTO ===== -->
+        <section id="contacto" class="contact">
+            <div class="section-header">
+                <span class="section-tag">Conectemos</span>
+                <h2>¿Hablamos?</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Estoy en búsqueda de mi primera oportunidad profesional como desarrollador Java
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:jhon117.hello@gmail.com">jhon117.hello@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Jhonayker777" target="_blank">github.com/Jhonayker777</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/jhonayker-quintero"
+                                target="_blank">linkedin.com/in/jhonayker-quintero</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <a href="tel:+573507118018">+57 350 711 8018</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
             </div>
         </section>
     </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>Jhonayker Quintero</span>
+            </div>
+            <p class="footer-text">
+                Construyendo soluciones, un commit a la vez.
+            </p>
+            <div class="footer-social">
+                <a href="https://github.com/Jhonayker777" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/jhonayker-quintero" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 Jhonayker Quintero.</i>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPT ==================== -->
+    <script src="script.js"></script>
 </body>
+
 </html>
