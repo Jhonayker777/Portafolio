@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        console.log('✅ Encontradas ' + skillBars.length + ' barras');
+        
 
         let animatedCount = 0;
 
@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const defaultPercentages = ['75%', '60%', '55%', '45%', '85%', '70%', '35%', '60%'];
                 targetWidth = defaultPercentages[index] || '50%';
                 bar.style.width = targetWidth;
-                console.log(`📊 Barra ${index} sin width, asignando ${targetWidth}`);
             }
 
             
