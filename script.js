@@ -87,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        console.log('🔄 Animando barras de habilidades...');
-
         const skillBars = document.querySelectorAll('.skill-progress');
 
         if (!skillBars.length) {
@@ -113,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(`📊 Barra ${index} sin width, asignando ${targetWidth}`);
             }
 
-            console.log(`📊 Barra ${index}: ${bar.parentElement.parentElement.querySelector('.skill-name')?.textContent || index} → ${targetWidth}`);
+            
 
             // Resetear a 0
             bar.style.width = '0%';
@@ -148,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isVisible = rect.top < windowHeight - 50 && rect.bottom > 50;
 
         if (isVisible) {
-            console.log('✅ Sección visible, animando barras...');
+            
             animateSkillBars();
         }
     }
