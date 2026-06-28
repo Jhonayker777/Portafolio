@@ -677,13 +677,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ============================================
-    // EMAIL DE CONTACTO
-    // ============================================
 
     // ============================================
-// ENVÍO DE FORMULARIO CON EMAILJS - VERSIÓN MEJORADA
-// ============================================
+    // ENVÍO DE FORMULARIO CON EMAILJS - VERSIÓN MEJORADA
+    // ============================================
 
 (function setupContactForm() {
     const contactForm = document.querySelector('.contact-form');
