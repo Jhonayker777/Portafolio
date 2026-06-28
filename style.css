@@ -108,7 +108,8 @@ main {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 70px; /* Altura del header */
+    margin-top: 70px;
+    /* Altura del header */
 }
 
 /* ============================================
@@ -336,10 +337,12 @@ section {
 }
 
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-12px);
     }
@@ -359,10 +362,12 @@ section {
 }
 
 @keyframes bounce {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(8px);
     }
@@ -371,6 +376,79 @@ section {
 /* ============================================
    BOTONES
    ============================================ */
+/* ============================================
+   MENSAJE "NO HAY PROYECTOS" + CONTADOR
+   ============================================ */
+
+.empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--bg-card, #ffffff);
+    border-radius: 16px;
+    border: 2px dashed var(--border-color, #e2e8f0);
+    transition: all 0.3s ease;
+}
+
+.empty-message h3 {
+    color: var(--text-primary, #1a202c);
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.empty-message p {
+    color: var(--text-secondary, #4a5568);
+    font-size: 1rem;
+}
+
+.empty-message .empty-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* Modo oscuro */
+body.dark-mode .empty-message {
+    background: var(--bg-card, #1e293b);
+    border-color: var(--border-color, #334155);
+}
+
+body.dark-mode .empty-message h3 {
+    color: var(--text-primary, #e2e8f0);
+}
+
+body.dark-mode .empty-message p {
+    color: var(--text-secondary, #94a3b8);
+}
+
+/* Contador de proyectos */
+.project-counter {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--text-muted, #94a3b8);
+    font-weight: 500;
+}
+
+body.dark-mode .project-counter {
+    color: var(--text-muted, #64748b);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .empty-message {
+        padding: 40px 16px;
+    }
+
+    .empty-message .empty-icon {
+        font-size: 3rem;
+    }
+
+    .empty-message h3 {
+        font-size: 1.2rem;
+    }
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -1437,4 +1515,3 @@ body.dark-mode .footer-social a:hover {
         background: var(--bg-card) !important;
     }
 }
-
